@@ -32,3 +32,4 @@ In this example, `selectedUtxos` will be an instance of `Either[String, Selected
 
 3. **Question**: How does the code handle gas estimation for transactions?
    **Answer**: The code handles gas estimation through the `GasEstimation` object and its methods. It estimates gas for both asset scripts and transaction scripts, considering factors like input scripts, output scripts, and the number of inputs and outputs. The `Build` and `BuildWithOrder` case classes use these gas estimations to select UTXOs that can cover the required gas fees.
+<!-- Auto-update: 2025-10-18T09:35:26.104656 -->
